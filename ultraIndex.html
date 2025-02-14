@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine Card</title>
+    <link rel="stylesheet" href="../css/ultraIndexStyles.css">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+</head>
+<body>
+    <!-- Sección inicial (visible al cargar) -->
+    <div class="card">
+        <div class="left">
+            <h1>Will you be my <span>Valentine?</span></h1>
+            <p> Después de una ardua investigación, nuestros expertos (Sunny, Shaggy y Yoda) determinaron que tú eres la candidata perfecta para ser mi San Valentín.
+                ¿Quieres saber más sobre los beneficios y las razones por las que quiero que seas mi San Valentín? ¡Pica el botón de abajo!</p>
+            <button id="reveal-button">Este Botón</button>
+        </div>
+        <div class="right">
+            <img src="../Images/perfect_bgRemoved.png" alt="User and partner photo">
+        </div>
+    </div>
+
+    <!-- Resto del contenido (oculto inicialmente) -->
+    <div class="hidden-content">
+        <div class="boxRazones">
+            <div class="imgRazones">
+                <img src="../Images/TheParkChristmas.jfif" alt="The Park Christmas">
+            </div>
+            <div class="razones">
+                <h3>5 RAZONES <span>POR LAS QUE TE ESCOGÍ A TI</span></h3>
+                <ul>
+                    <li>- Eres mi persona favorita en todo el mundo mundial</li>
+                    <li>- Nadie más me hace reír como tú</li>
+                    <li>- No me imagino pasando San Valentín con alguien que no seas tú</li>
+                    <li>- Porque quiero sacar esa risa que solo me sale estando a tu lado</li>
+                    <li>- Mi corazón me lo está pidiendo con sus más fuertes latidos</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="por-que-aceptar">
+            <h2>¿Por qué deberías aceptar?</h2>
+            <ul>
+                <li>  Porque somos novios y nos amamos mucho (aunque yo mil veces más)</li>
+                <li>  Si parpadeas al menos una vez a partir de ahora significa que sí quieres</li>
+                <li>  Vamos a hacer muchas locuras (muchos abrazos)</li>
+                <li>  Porque una vez se te cayó el elote en mis zapatos nuevos</li>
+                <li>  Porque he amado cada momento que paso a tu lado, el tiempo pasa volando y quiero aprovechar cada experiencia que pueda tener contigo</li>
+            </ul>
+        </div>
+
+        <div class="time-together">
+            <h1 class="beenTogetherText">Hemos estado juntos por:</h1>
+            <div id="time-counter">Cargando...</div>
+            <p class="counting-text">...y seguimos contando </p>
+        </div>
+
+        <div class="fotos-grafica-container">
+            <div class="main">
+                <h1>Fotos bonitas de alguien bonita</h1>
+                <section>
+                    <img src="../Images/exclamoLaPrincesa.jpeg" alt="">
+                    <img src="../Images/guapisima.jpeg" alt="">
+                    <img src="../Images/besoLenguaOjoCerrado.jpeg" alt="">
+                    <img src="../Images/aycabrongreñas.jpeg" alt="">
+                </section>
+                <p class="poque">Adjunto unas fotos bonitas de ti que me gustan mucho amor, me gustas mucho y siempre quiero recordartelo, eres mi vida entera, gracias por existir a mi lado.</p>
+            </div>
+
+            <figure class="pie-chart">
+                <h2>Desglose de beneficios por ser mi San Valentín</h2>
+                <figcaption>
+                    Amor 30%<span style="color:#e91e63"></span><br>
+                    Abrazos 20%<span style="color:#ff558c"></span><br>
+                    Risas 15%<span style="color:#ff8da6"></span><br>
+                    Besitos en la frente 20%<span style="color:#f9afbc"></span><br>
+                    Besotes de esos que me sacan el aire 15%<span style="color:#e78fff"></span>
+                </figcaption>
+                <cite>*Se aceptan sugerencias*</cite>
+            </figure>
+        </div>
+
+        <!-- Carrusel con el formulario -->
+        <div class="carrusel-contenedor">
+            <div class="carrusel">
+                <div class="carrusel-item" style="background-image: url(../Images/normalFarmacia.jpeg);"></div>
+                <div class="carrusel-item">
+                    <video autoplay muted loop>
+                        <source src="../Images/barritoVideo.mp4">
+
+                    </video>
+                </div>
+                <div class="carrusel-item" style="background-image: url(../Images/chula.jpeg);"></div>
+                <div class="carrusel-item" style="background-image: url(../Images/enojonadormilona.jpeg);"></div>
+                <div class="carrusel-item" style="background-image: url(../Images/greñas.jpeg);"></div>
+            </div>
+
+            <div class="formulario-sobrepuesto">
+                <p class="texto-centrado">Una vez analizado todo lo anterior te pregunto...</p>
+                <div class="pregunta">
+                    <span class="tipografia-1">¿Quieres ser mi San Valentín?</span>
+                </div>
+                <div class="formulario">
+                    <form id="valentine-form">
+                        <label for="respuesta">Marca tu respuesta:</label>
+                        <div class="opciones">
+                            <label>
+                                <input type="radio" name="respuesta" value="si" required>
+                                Obvio mi amor hermoso, guapo, sexy. Hermoso, ya te habías tardado.
+                            </label>
+                            <label>
+                                <input type="radio" name="respuesta" value="no" required>
+                                No gracias, te odio y no quiero volverte a ver nunca. Me voy a ir con el otro, bye.
+                            </label>
+                        </div>
+                        <button type="submit" class="boton-enviar">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <script>
+        function updateTimeCounter() {
+            const startDate = new Date('2024-10-05T00:00:00');
+            const now = new Date();
+            const diff = now - startDate;
+
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+            document.getElementById('time-counter').innerHTML = `
+                <div class="time-block">
+                    <span class="time-number">${days}</span>
+                    <span class="time-label">Días</span>
+                </div>
+                <div class="time-block">
+                    <span class="time-number">${hours}</span>
+                    <span class="time-label">Horas</span>
+                </div>
+                <div class="time-block">
+                    <span class="time-number">${minutes}</span>
+                    <span class="time-label">Minutos</span>
+                </div>
+                <div class="time-block">
+                    <span class="time-number">${seconds}</span>
+                    <span class="time-label">Segundos</span>
+                </div>
+            `;
+        }
+
+        setInterval(updateTimeCounter, 1000);
+        updateTimeCounter();
+
+        // Mostrar el contenido oculto y hacer scroll suave
+        document.getElementById('reveal-button').addEventListener('click', function() {
+            const hiddenContent = document.querySelector('.hidden-content');
+            hiddenContent.classList.add('show-content'); // Mostrar el contenido
+            hiddenContent.scrollIntoView({ behavior: 'smooth' }); // Scroll suave
+        });
+
+        // Manejar el formulario
+        document.getElementById('valentine-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita que el formulario se envíe de forma tradicional
+            const respuesta = document.querySelector('input[name="respuesta"]:checked').value;
+
+            // Si la respuesta es 'no', abre un enlace en una nueva pestaña
+            if (respuesta === 'no') {
+                window.open('https://www.youtube.com/watch?v=y8rBC6GCUjg', '_blank'); // Cambia esta URL por la que desees
+            } else {
+                window.open('ruta/a/otro/archivo.html', '_blank'); // Cambia a la ruta del archivo que deseas abrir
+            }
+        });
+    </script>
+</body>
+</html>
