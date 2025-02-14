@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valentine Card</title>
-    <link rel="stylesheet" href="ultraIndexStyles.css">
+    <link rel="stylesheet" href="ultraIndexStyles.css"> <!-- Cambié la ruta aquí -->
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
     <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
 </head>
 <body>
     <!-- Sección inicial (visible al cargar) -->
-    
     <div class="card">
         <div class="left">
             <h1>Will you be my <span>Valentine?</span></h1>
@@ -19,7 +18,7 @@
             <button id="reveal-button">Este Botón</button>
         </div>
         <div class="right">
-            <img src="../Images/perfect_bgRemoved.png" alt="User and partner photo">
+            <img src="perfect_bgRemoved.png" alt="User and partner photo"> <!-- Cambié la ruta aquí -->
         </div>
     </div>
 
@@ -27,7 +26,7 @@
     <div class="hidden-content">
         <div class="boxRazones">
             <div class="imgRazones">
-                <img src="../Images/TheParkChristmas.jfif" alt="The Park Christmas">
+                <img src="TheParkChristmas.jfif" alt="The Park Christmas"> <!-- Cambié la ruta aquí -->
             </div>
             <div class="razones">
                 <h3>5 RAZONES <span>POR LAS QUE TE ESCOGÍ A TI</span></h3>
@@ -62,10 +61,10 @@
             <div class="main">
                 <h1>Fotos bonitas de alguien bonita</h1>
                 <section>
-                    <img src="../Images/exclamoLaPrincesa.jpeg" alt="">
-                    <img src="../Images/guapisima.jpeg" alt="">
-                    <img src="../Images/besoLenguaOjoCerrado.jpeg" alt="">
-                    <img src="../Images/aycabrongreñas.jpeg" alt="">
+                    <img src="exclamoLaPrincesa.jpeg" alt=""> <!-- Cambié la ruta aquí -->
+                    <img src="guapisima.jpeg" alt=""> <!-- Cambié la ruta aquí -->
+                    <img src="besoLenguaOjoCerrado.jpeg" alt=""> <!-- Cambié la ruta aquí -->
+                    <img src="aycabrongreñas.jpeg" alt=""> <!-- Cambié la ruta aquí -->
                 </section>
                 <p class="poque">Adjunto unas fotos bonitas de ti que me gustan mucho amor, me gustas mucho y siempre quiero recordartelo, eres mi vida entera, gracias por existir a mi lado.</p>
             </div>
@@ -86,16 +85,15 @@
         <!-- Carrusel con el formulario -->
         <div class="carrusel-contenedor">
             <div class="carrusel">
-                <div class="carrusel-item" style="background-image: url(../Images/normalFarmacia.jpeg);"></div>
+                <div class="carrusel-item" style="background-image: url('normalFarmacia.jpeg');"></div> <!-- Cambié la ruta aquí -->
                 <div class="carrusel-item">
                     <video autoplay muted loop>
-                        <source src="../Images/barritoVideo.mp4">
-
+                        <source src="barritoVideo.mp4"> <!-- Cambié la ruta aquí -->
                     </video>
                 </div>
-                <div class="carrusel-item" style="background-image: url(../Images/chula.jpeg);"></div>
-                <div class="carrusel-item" style="background-image: url(../Images/enojonadormilona.jpeg);"></div>
-                <div class="carrusel-item" style="background-image: url(../Images/greñas.jpeg);"></div>
+                <div class="carrusel-item" style="background-image: url('chula.jpeg');"></div> <!-- Cambié la ruta aquí -->
+                <div class="carrusel-item" style="background-image: url('enojonadormilona.jpeg');"></div> <!-- Cambié la ruta aquí -->
+                <div class="carrusel-item" style="background-image: url('greñas.jpeg');"></div> <!-- Cambié la ruta aquí -->
             </div>
 
             <div class="formulario-sobrepuesto">
@@ -173,7 +171,7 @@
             if (respuesta === 'no') {
                 window.open('https://www.youtube.com/watch?v=y8rBC6GCUjg', '_blank'); // Cambia esta URL por la que desees
             } else {
-                window.open('html/card.html', '_blank'); // Cambia a la ruta del archivo que deseas abrir
+                window.open('ruta/a/otro/archivo.html', '_blank'); // Cambia a la ruta del archivo que deseas abrir
             }
         });
     </script>
